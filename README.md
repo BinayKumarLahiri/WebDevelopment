@@ -28,9 +28,7 @@ Feel free to explore the files and projects in this repository. Here's how you c
 
 I'm a passionate learner diving into the world of web development. This repository serves as a documentation of my learning journey and progress. Expect to see updates and improvements as I continue to explore and learn more about web development.
 
-## Contact
-
-Feel free to reach out to me if you have any questions, suggestions, or just want to connect. You can find me at [your.email@example.com](mailto:your.email@example.com) or via my [LinkedIn profile](https://www.linkedin.com/in/yourusername/).
+Author : Binay Kumar Lahiri
 
 Happy coding! 🚀
 
