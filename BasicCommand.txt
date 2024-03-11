@@ -1,0 +1,7 @@
+Basic Git and Terminal Commands:
+1. Clone : git clone <repository https address>
+2. Changing Directory: cd <directory name or address>
+3. Clearing the Terminal : Clear or cls
+4. Listing all files int the Directory : ls
+5. Listing all Hidden files : ls -a
+6. Checking Status of the files : git status
