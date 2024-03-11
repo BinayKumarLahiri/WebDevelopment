@@ -5,3 +5,17 @@ Basic Git and Terminal Commands:
 4. Listing all files int the Directory : ls
 5. Listing all Hidden files : ls -a
 6. Checking Status of the files : git status
+    Git Status
+        a. Untracked : Newly created files
+        b. Modified : Changed or updated files
+        c. Staged : Changed and Added but not Comminted
+        d. Commit : Saving or taking screen shot of the repository
+7. Adding Files : git add <file Name>
+8. Adding All Files : git add .
+9. Commiting : git commit -m "Some message describing the Change"
+10. Adding the changes from local machine to the mobile network/repo : git push origin main
+11. Leaving any current directory : ls ..
+12. Creating a new repo in the local machine and updating it in the github: 
+    a. make a new folder
+    b. open Terminal
+    c. run command: git init
