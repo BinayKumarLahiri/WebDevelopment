@@ -19,3 +19,7 @@ Basic Git and Terminal Commands:
     a. make a new folder
     b. open Terminal
     c. run command: git init
+13. To check which branch we are in currently : git branch
+14. To change branch : git checkout <branch name>
+15. To create a new Branch : git checkout -b <branch name>
+16. To delete a branch : git checkout -d <branch name>
