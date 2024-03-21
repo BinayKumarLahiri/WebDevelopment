@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Element Selector */
+        div{
+            background-color: red;
+            color: yellow;
+        }
+        /* Class Selector */
+        .class{
+            background-color: black;
+            color: white;
+        }
+        /* Id Selector */
+        #id{
+            background-color: blue;
+            color: black;
+        }
+        /* Child Selector : Direct Child Only*/
+        div>p{
+            background-color: #a53131;
+            color: aqua;
+        }
+
+
+        /* Pseudo Selectors */
+        
+        a:link {
+            color: red;
+        }
+
+        a:visited{
+            color: green;
+        }
+
+        a:active{
+            background-color: black;
+            color: white;
+        }
+
+        a:hover {
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Selector</h1>
+    <div>Element Selector</div>
+    <div class="class">Classector</div>
+    <div id="id">Id Selector</div>
+    <div>
+        <p>Child Of A div Child Selector</p>
+    </div>
+
+    <a href="google.com" class="link">Google</a>
+    <a href="facebook.com" class="link">Facebook</a>
+    <a href="youtube.com" class="link">Youtube</a>
+</body>
+</html>
