@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: #f7a7a7;
+            text-align: center;
+            font-size: 50px;
+            padding: 50px;
+            border: 5px solid black;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Margin Collapse: If margin of two elements collide then the largest of them gets applied and the other one gets rejected. -->
+    <pre>
+The CSS Box Model is a fundamental concept in web design and development. 
+It describes how HTML elements are modeled in browsers and consists of four main components:
+
+1. Content: The actual content of the box, where text and images appear.
+2. Padding: Clears an area around the content; it’s transparent and inside the border.
+3. Border: Surrounds the padding and content; can be styled in various ways.
+4. Margin: Clears an area outside the border; it’s also transparent.
+    </pre>
+
+
+    <div class="box">CSS Box Model</div>
+
+</body>
+</html>
