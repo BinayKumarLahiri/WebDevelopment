@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            background-color: #abfaa0;
+            padding: 50px;
+        }
+        .box {
+            background-color: #f89898;
+            color: black;
+            font-size: 3rem;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        .inlineBlock {
+            display: inline-block;
+        }
+        ul{
+            margin: 5rem;
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Properties</h1>
+    <ul>
+        <li>Block : Block Element takes the entire available width</li>
+        <li>Inline : Inline Element, Takes only the needed space(!!Width, height,Padding-top, Margin-top can't be applied to a inline element)</li>
+        <li>Inline Block : Inline Element, Takes only the needed space(!!Width, height,Padding-top, Margin-top can be applied to a inline element)</li>
+        <li>None : Doesn't Renders the element</li>
+        <li>Flex</li>
+        <li>Inline-Flex</li>
+        <li>Grid</li>
+    </ul>
+
+
+
+    <div class="container">
+        <div class="box block">
+            Display block
+        </div>
+        <span class="box inline">Inline</span>
+        <span class="box inlineBlock">InlineBlock</span>
+    </div>
+</body>
+</html>
