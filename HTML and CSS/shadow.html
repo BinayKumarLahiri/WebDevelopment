@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            background-color: #fa5454;
+            box-shadow: 5px 5px 20px 5px #d10101;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            margin: 10rem;
+            font-size: 5rem;
+            color: white;
+            text-shadow: 2px 2px 5px red, -2px -2px 5px rgb(29, 76, 247), 5px 20px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Box shadow: box Shadows enables developers to add shadow effect in their designs and elements
+    Syntax : 
+    box-shadow: horizontal-offset vertical-offset blur spread color inset -->
+    <div class="box">
+        <p>Box Shadow</p>
+    </div>
+    <h1>Text Shadow</h1>
+</body>
+</html>
