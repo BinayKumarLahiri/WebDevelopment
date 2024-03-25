@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        :root{
+            --red:red;
+            --blue:blue;
+            --green:green;
+            --violet: violet;
+            --purple: purple;
+            --pink:pink;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 10rem;
+        }
+        @media only screen and (min-width:200px){
+            body{
+                background-color: var(--red);
+            }
+        }
+        @media only screen and (min-width:400px){
+            body{
+                background-color: var(--blue);
+            }
+        }
+        @media only screen and (min-width:600px){
+            body{
+                background-color: var(--green);
+            }
+        }
+        @media only screen and (min-width:800px){
+            body{
+                background-color: var(--violet);
+            }
+        }
+        @media only screen and (min-width:1000px){
+            body{
+                background-color: var(--purple);
+            }
+        }
+        @media only screen and (min-width:1200px){
+            body{
+                background-color: var(--pink);
+            }
+        }
+        @media only screen and (orientation: landscape) {
+            h1::after{
+                content: "Landscape";
+                font-size: 5rem;
+                color: white;
+                text-shadow: 2px 2px 2px black;
+                text-align: center;
+            }
+        }
+        h1{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Media Querys are use to change or modify the styling of the website based on the device in which the site is being rendered -->
+    <!-- Syntax :
+        @media not|only mediatype and (expression) {
+
+        }
+
+        mediatype : 
+        1. all
+        2. print
+        3. screen
+        4. speech -->
+    <h1>Change The View-Port Width and see the background color changing</h1>
+</body>
+</html>
