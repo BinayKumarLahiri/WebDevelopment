@@ -53,6 +53,38 @@
             color: white;
         }
 
+        /* Selects every thing from the class boxes */
+        .boxes *{
+            background-color: white;
+            color: blue;
+            border: 2px solid black;
+        }
+        .before{
+            display: inline-block;
+            padding: 5rem;
+            background-color: lightgre;
+        }
+
+        /* Pseudo Elements: Used to insert html dynamically using css */
+        .before::before{
+            content: "Content Before Span";
+            background-color: yellow;
+            padding: 1.1rem;
+        }
+        .before::after{
+            content: "Content After Span";
+            background-color: lightblue;
+            padding: 1.1rem;
+        }
+        p.text{
+            padding: 2rem;
+        }
+
+        /* Selects the elements selected in the webpage */
+        .text::selection{
+            background-color: black;
+            color: green;
+        }
     </style>
 </head>
 <body>
@@ -67,5 +99,14 @@
     <a href="google.com" class="link">Google</a>
     <a href="facebook.com" class="link">Facebook</a>
     <a href="youtube.com" class="link">Youtube</a>
+
+    <div class="boxes">
+        <div class="box">First Line</div>
+        <div class="box">Second Line</div>
+        <div class="box">Third Line</div>
+    </div>
+
+    <span class="before">Before</span>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolor! Nulla exercitationem voluptatum error veniam. Numquam blanditiis doloremque velit laboriosam odio sint facere est consectetur consequuntur voluptatibus accusamus iusto incidunt, nostrum at enim inventore ab repellendus explicabo eveniet deserunt laborum dicta iste a. Numquam magnam harum nesciunt dicta ex, incidunt a at aspernatur quasi accusamus quia suscipit odio ratione, dolor nihil, pariatur fugiat nostrum aliquid vero fuga commodi. Perspiciatis deserunt quam accusantium optio quidem mollitia sint deleniti, cumque consequuntur. Sint, veniam? Corrupti assumenda minima incidunt, fuga veritatis in debitis quaerat sed. Error quasi hic repellat nam, aperiam inventore magnam cumque.</p>
 </body>
 </html>
