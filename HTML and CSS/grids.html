@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 600px;
+            height: 600px;
+            margin: auto;
+            border: 2px solid black;
+            display: grid;
+            /* Creates rows */
+            grid-template-rows: repeat(6,1fr);
+            /* Creates Columns */
+            grid-template-columns: repeat(6,1fr);
+        }
+        .box{
+            /* width: 100px;
+            height: 100px; */
+            background-color: #f162fb;
+            /* border: 1px solid black; */
+        }
+        .box4{
+            /* Used for Placing items in the grid using the row and column numbers */
+            grid-row-start: 5;
+            grid-row-end: 6;
+            /* grid-row: 5/6; */
+            grid-column-start: 4;
+            grid-column-end: 6;
+            /* grid-column: 5/6; */
+        }
+        .box5{
+            grid-row: 4/5;
+            grid-column: 5/6;
+        }
+        .box1{
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        .box2{
+            grid-row: 3/4;
+            grid-column: 3/4;
+        }
+        .box3{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        .area{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            display: grid;
+            grid-template: ;
+            grid-template-areas:
+                "r r r r r",
+                "b b b g g",
+                "b b b g g",
+                "p p p b b";
+        }
+        .red{
+            background-color: red;
+            grid-area: r;
+        }
+        .blue{
+            background-color: blue;
+            grid-area: b;
+        }
+        .green{
+            background-color: green;
+            grid-area:g;
+        }
+        .purple{
+            background-color: purple;
+            grid-area: p;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        
+    </div>
+    <div class="area">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+    </div>
+</body>
+</html>
