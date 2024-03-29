@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #faa6a6;
+            border: 5px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            width: 40%;
+            aspect-ratio: 1/1;
+            border: 1px solid black;
+            background-color: #fa4444;
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+            transform: rotateZ(45deg);
+            /* transform: scaleX(1.5); */
+            /* transform: scaleY(1.5); */
+            /* transform: skewX(45deg); */
+            /* transform: skewY(45deg); */
+            /* transform: translateX(50%); */
+            /* transform: translateY(50%); */
+            /* transform: translateZ(50%); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

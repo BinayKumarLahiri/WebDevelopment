@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            width: 100vw;
+        }
+
+        .nav-content {
+            width: 100%;
+            max-width: 930px;
+            padding: 2rem;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-content ul {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-content ul li {
+            list-style-type: none;
+        }
+
+        .details {
+            width: 100%;
+            max-width: 930px;
+            margin: auto;
+            padding: 5rem;
+            text-align: center;
+        }
+
+        .main-text {
+            font-size: 2.5rem;
+            margin: 1.5rem 0px;
+        }
+
+        .main-text span {
+            font-weight: 800;
+        }
+
+        .sec-text {
+            padding: 0px 1rem;
+            margin: 1rem 0px;
+        }
+
+        .details>a {
+            text-decoration: none;
+            background-color: #38a2f3;
+            color: white;
+            /* border: 2px solid black; */
+            border-radius: 4px;
+            font-size: 0.8rem;
+            padding: 10px 10px;
+        }
+        .download{
+            width: 100%;
+            max-width: 750px;
+            padding: 1rem;
+            margin: auto;
+        }
+        .version span{
+            font-size: 0.7rem;
+            color: rgb(12, 12, 12);
+        }
+        .links{
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+            align-items: center;
+            justify-items: center;
+        }
+        .card{
+            width: 100%;
+            max-width: 218px;
+            max-height: 136px;
+            aspect-ratio: 5/3;
+            border-radius: 5px;
+            padding: 0.5rem;
+            text-align: center;
+            background-color: #efeded;
+        }
+        .lang-text{
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 5px 0px;
+        }
+        .lang{
+            font-size: 0.7rem;
+            color: rgb(12, 12, 12);
+            margin: 10px 0px;
+        }
+        .btns{
+            width: 100%;
+            margin: 20px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .btns a{
+            text-decoration: none;
+            /* background-color: #38a2f3; */
+            color: white;
+            /* border: 2px solid black; */
+            border-radius: 4px;
+            font-size: 0.8rem;
+            padding: 5px 6px; 
+        }
+        .bit-32{
+            background-color: #38a2f3;
+            color: white;
+        }
+        .bit-64{
+            background-color: rgb(18, 195, 38);;
+            color: rgb(18, 195, 38);
+        }
+        @media only screen and (max-width:425px) {
+            .links{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-content">
+                <h1>UltraEdit</h1>
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="details">
+            <p class="main-text">Download <span>UltraEdit</span> for Windows</p>
+            <p class="sec-text">Download and Try UltraEdit for free before you buy it. This Donwnload includes the full
+                windows version of the text Editor</p>
+            <a href="#">Download Mac or LInux Version</a>
+        </div>
+        <div class="download">
+            <p class="version">Download UltraEdit <span>v2023.1(released 08/06/2023) | Hotfix</span></p>
+            <div class="links">
+                <div class="card">
+                    <div class="lang-text">Deustch</div>
+                    <div class="lang">German</div>
+                    <div class="btns">
+                        <a href="#" class="bit-32">Download 32-bit</a>
+                        <a href="#" class="bit-64">Download 64-bit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lang-text">Deustch</div>
+                    <div class="lang">German</div>
+                    <div class="btns">
+                        <a href="#" class="bit-32">Download 32-bit</a>
+                        <a href="#" class="bit-64">Download 64-bit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lang-text">Deustch</div>
+                    <div class="lang">German</div>
+                    <div class="btns">
+                        <a href="#" class="bit-32">Download 32-bit</a>
+                        <a href="#" class="bit-64">Download 64-bit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lang-text">Deustch</div>
+                    <div class="lang">German</div>
+                    <div class="btns">
+                        <a href="#" class="bit-32">Download 32-bit</a>
+                        <a href="#" class="bit-64">Download 64-bit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lang-text">Deustch</div>
+                    <div class="lang">German</div>
+                    <div class="btns">
+                        <a href="#" class="bit-32">Download 32-bit</a>
+                        <a href="#" class="bit-64">Download 64-bit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lang-text">Deustch</div>
+                    <div class="lang">German</div>
+                    <div class="btns">
+                        <a href="#" class="bit-32">Download 32-bit</a>
+                        <a href="#" class="bit-64">Download 64-bit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lang-text">Deustch</div>
+                    <div class="lang">German</div>
+                    <div class="btns">
+                        <a href="#" class="bit-32">Download 32-bit</a>
+                        <a href="#" class="bit-64">Download 64-bit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lang-text">Deustch</div>
+                    <div class="lang">German</div>
+                    <div class="btns">
+                        <a href="#" class="bit-32">Download 32-bit</a>
+                        <a href="#" class="bit-64">Download 64-bit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lang-text">Deustch</div>
+                    <div class="lang">German</div>
+                    <div class="btns">
+                        <a href="#" class="bit-32">Download 32-bit</a>
+                        <a href="#" class="bit-64">Download 64-bit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lang-text">Deustch</div>
+                    <div class="lang">German</div>
+                    <div class="btns">
+                        <a href="#" class="bit-32">Download 32-bit</a>
+                        <a href="#" class="bit-64">Download 64-bit</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
