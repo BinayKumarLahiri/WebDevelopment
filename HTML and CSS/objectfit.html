@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObjectFit</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+
+        }
+        .container img{
+            width: 500px;
+            height: 500px;
+            /* Don't have any relation with the parent container */
+            /* object-fit: cover; */
+            /* object-fit: fill; */
+            /* object-fit: none; */
+            object-fit: cover;
+            
+            /* object-position: top right; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGltYWdlfGVufDB8fDB8fHww" alt="Butterfly">
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid black;
+            position: relative;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: #301e6f;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0%;
+            
+
+        }
+        .box1{
+            animation: jumpy 1s ease-out infinite alternate, jumpx 2s linear infinite alternate;
+            background-color: red;
+        }
+        .box2{
+            animation: jumpy 2s ease-out infinite alternate, jumpx 5s linear infinite alternate;
+            background-color: green;
+        }
+        .box3{
+            animation: jumpy 3s ease-out infinite alternate, jumpx 7s linear infinite alternate;
+            background-color: pink;
+        }
+        .box4{
+            animation: jumpy 4s ease-out infinite alternate, jumpx 10s linear infinite alternate;
+            background-color: blue;
+        }
+        .box5{
+            animation: jumpy 5s ease-out infinite alternate, jumpx 15s linear infinite alternate;
+            background-color: yellow;
+        }
+        .box6{
+            animation: jumpy 6s ease-out infinite alternate, jumpx 20s linear infinite alternate;
+            background-color: black;
+        }
+        .box7{
+            animation: jumpy 7s ease-out infinite alternate, jumpx 2s linear infinite alternate;
+            background-color: purple;
+        }
+        .box8{
+            animation: jumpy 8s ease-out infinite alternate, jumpx 5s linear infinite alternate;
+            background-color: aqua;
+        }
+        .box9{
+            animation: jumpy 9s ease-out infinite alternate, jumpx 7s linear infinite alternate;
+            background-color: tomato;
+        }
+        .box10{
+            animation: jumpy 10s ease-out infinite alternate, jumpx 10s linear infinite alternate;
+            background-color: violet;
+        }
+        @keyframes jumpy{
+            from{
+                bottom: 0%;
+                transform: scaleY(0.95);
+            }
+            to{
+                bottom: 90%;
+                transform: scaleY(1.15);
+            }
+        }
+        @keyframes jumpx{
+            from{
+                left: 0%;
+            }
+            to{
+                left: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a Bouncing Ball Animation -->
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+        <div class="box box10"></div>
+    </div>
+</body>
+</html>
