@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM Object</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .box{
+            width: 100px;
+            aspect-ratio: 1/1;
+            border: 2px solid black;
+            margin: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+    <script>
+        console.log(window);
+        console.log(window.document.body);
+
+        //Getting every child of a node : using .child
+        console.log(document.body.childNodes);
+        console.log(document.body.childNodes[1].childNodes);//Gets every child of the 2nd child of the body
+        console.log(document.body.children);
+
+        //Getting first and last child
+        console.log(document.body.childNodes[1].firstElementChild);
+
+        console.log(document.body.childNodes[1].lastElementChild)
+    </script>
+</body>
+</html>
