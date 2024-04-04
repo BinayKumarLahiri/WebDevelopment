@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Creation</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        let container = document.querySelector(".container");
+        let box = document.createElement("div");
+        box.style.width = "200px";
+        box.style.height = "200px";
+        box.style.borderWidth = "2px";
+        box.style.borderStyle = "solid";
+        box.style.borderColor = "black";
+        box.innerText = "Appended by Javascript";
+        container.append(box);
+
+        //Appending Using html String
+        container.insertAdjacentHTML("afterend","<h1> Hello World</h1>");
+    </script>
+</body>
+</html>
