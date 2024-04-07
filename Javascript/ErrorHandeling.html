@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handeling</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter A : "));
+        let b = parseInt(prompt("Enter B : "));
+        try {
+            if(isNaN(a) || isNaN(b))
+                throw("Not a Number");
+            if(b==0)
+                throw("Zero not Allowed");
+
+            let ans = a/b;
+            console.log(a," / ",b, " = ",ans);
+        } catch (error) {
+            console.log("Error Occured");
+            console.log(error);
+        }finally{
+            console.log("Process Finished");//Finally block always gets executed even if there is an error or not and even while using inside a function if we return from the function from the try or catch block even then the finally block gets executed
+        }
+    </script>
+</body>
+</html>

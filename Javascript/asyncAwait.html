@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Await</title>
+</head>
+<body>
+    <script>
+        async function getData() {//This is a async function
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("Data Loaded...");
+                },3000);
+            })
+        }
+
+
+        async function getJson() {
+            let x = await fetch('https://jsonplaceholder.typicode.com/todos/1'); //Waits for the fetch to fetch data
+            let data = await x.json(); //waits for the data to be parsed into json
+            return data;
+        }
+        async function main() {
+        console.log("Something...")
+        let data = await getJson();//getData is a aynchronous funtion but await waits for it to get resolved completely only after the that the code after it gets executed
+        console.log(data);
+        console.log("Something else...");
+        }
+        main();
+    </script>
+</body>
+</html>

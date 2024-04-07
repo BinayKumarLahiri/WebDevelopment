@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+
+        }
+        #btn{
+            margin: 14px;
+            padding: 14px;
+            background-color: #e1e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="btn">Stop</button>
+
+    <script>
+
+        setTimeout(() => {
+            alert("10 seconds Completed");
+        }, 10000);
+        function getRandomColor() {
+            let red = Math.floor(Math.random()*255);
+            let green = Math.floor(Math.random()*255);
+            let blue = Math.floor(Math.random()*255);
+            let color = `rgb(${red},${green},${blue})`;;
+            return color;
+        }
+        function changeColor() {
+            document.getElementById("box").style.backgroundColor = getRandomColor();
+        }
+        let changingColor = setInterval(changeColor,500);
+        document.getElementById("btn").addEventListener("click",(e)=>{
+            clearInterval(changingColor);
+        })
+
+    </script>
+</body>
+</html>

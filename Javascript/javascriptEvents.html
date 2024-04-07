@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Events</title>
+    <style>
+        .child{
+            background-color: #f2a1a1;
+            margin: 14px;
+            padding: 14px;
+            border: 2px solid black;
+
+        }
+        .childcontainer{
+            background-color: #a1f2eb;
+            margin: 14px;
+            padding: 14px;
+            border: 2px solid black;
+        }
+        .container{
+            background-color: #cfa1f2;
+            margin: 14px;
+            padding: 14px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/Events -->
+    <button id="single">Single Click</button>
+    <button id="double">Double Click</button>
+
+
+
+    <div id="container" class="container">
+        <div id="childcontainer" class="childcontainer">
+            <div id="child" class="child">This is Child With Event Bubbling</div>
+        </div>
+    </div>
+    <div id="container2" class="container">
+        <div id="childcontainer2" class="childcontainer">
+            <div id="child2" class="child">This is Child Without Event Bubbling</div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("single").addEventListener("click",()=>{
+            alert("You Clicked");
+        })
+        document.getElementById("double").addEventListener("dblclick",()=>{
+            alert("You Double Clicked");
+        })
+        document.addEventListener("keydown",(e)=>{
+            console.log(e);
+        })
+
+
+        document.getElementById("container").addEventListener("click",(e)=>{
+            alert("Container Is Clicked");
+        })
+        document.getElementById("childcontainer").addEventListener("click",(e)=>{
+            alert("Childcontainer Is Clicked");
+        })
+        document.getElementById("child").addEventListener("click",(e)=>{
+            alert("Child Is Clicked");
+        })
+
+
+        document.getElementById("container2").addEventListener("click",(e)=>{
+            e.stopPropagation();
+            alert("Container Is Clicked");
+        })
+        document.getElementById("childcontainer2").addEventListener("click",(e)=>{
+            e.stopPropagation();
+            alert("Childcontainer Is Clicked");
+        })
+        document.getElementById("child2").addEventListener("click",(e)=>{
+            e.stopPropagation();
+            alert("Child Is Clicked");
+        })
+    </script>
+</body>
+</html>

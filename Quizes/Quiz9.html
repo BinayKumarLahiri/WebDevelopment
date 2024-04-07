@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Terminal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Ubuntu Mono", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+        body{
+            background-color: black;
+            padding: 20px;
+        }
+        .text{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+
+    <script>
+        const getRandomInterval = (max) => {
+            return Math.floor(Math.random()*max+1)*1000;
+        }
+
+        async function getHackingText(txt) {
+            let text = txt;
+            let waitInterval = getRandomInterval(7);
+            return await new Promise((resolve)=>{
+                setTimeout((txt)=>{
+                    resolve(`<p class="text">>> ${text}</p>`);
+                },waitInterval);
+            })
+        }
+
+        function blink() {
+            let x = setInterval(()=>{
+                let text = document.body.lastElementChild.innerHTML;
+                if(text.includes("...")){
+                    document.body.lastElementChild.innerHTML = text.replace("...","");
+                } else {
+                    document.body.lastElementChild.innerHTML = text.concat(".");
+                }
+            },300);
+            return x;
+        }
+
+        async function hack(hacktext) {
+            let blinking = blink();
+            for(let i=0;i<hacktext.length;i++) {
+                let texthtml = await getHackingText(hacktext[i]);
+                await document.body.insertAdjacentHTML("beforeend", texthtml);
+            }
+            clearInterval(blinking);
+            alert("Malicious Browser activity detected. Immediate System Reboot required. Reboot now?");
+        }
+
+        let hackingText = ["Initializing Hacking","Initializing File Reading","Reading Files","Password.txt Found","Initializing copy_file.exe","File Transfer completed","Cleaning Up System","System reboot started"];
+        hack(hackingText);
+
+    </script>
+</body>
+</html>

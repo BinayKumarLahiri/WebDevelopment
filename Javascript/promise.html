@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+
+<body>
+    <script>
+        let promise1 = new Promise((resolve, reject) => {
+            if (Math.random() < 0.5) reject("Process1 Failed");
+            else {
+                setTimeout(() => {
+                    console.log("Working...");
+                    resolve("Done1");
+                }, 1000);
+            }
+        })
+        let promise2 = new Promise((resolve, reject) => {
+            if (Math.random() < 0.5) reject("Process2 Failed");
+            else {
+                setTimeout(() => {
+                    console.log("Working...");
+                    resolve("Done2");
+                }, 2000);
+            }
+        })
+        
+
+        // promise1.then((a) => {
+        //     console.log(a);
+        // }).catch((err)=>{
+        //     console.log(err);
+        // })
+
+        let p3 = Promise.all([promise1,promise2]);//Returns the resolve value only if all of the promises are resolved
+        p3.then(a=>{
+            console.log(a);
+        }).catch(e=>{
+            console.log(e);
+        })
+
+        let p4 = Promise.allSettled([promise1,promise2]);//returns an object with status and value regardless of the promise being resolved
+        p4.then(a=>{
+            console.log(a);
+        }).catch(e=>{
+            console.log(e);
+        });
+
+        let p5 = Promise.race([promise1,promise2]);//returns the resolve/reject value of the first promise to be completed
+        p5.then(a=>{
+            console.log(a);
+        }).catch(e=>{
+            console.log(e);
+        });
+
+        let p6 = Promise.any([promise1,promise2]);//returns the resolve value of the first promise to get resolved
+        p6.then(a=>{
+            console.log(a);
+        }).catch(e=>{
+            console.log(e);
+        })
+    </script>
+</body>
+
+</html>
