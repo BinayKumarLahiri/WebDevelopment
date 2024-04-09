@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    padding: 2rem 2.5rem 0rem 2.5rem;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88%;
+    max-height: 180px;
+    background-color: #2350f4;
+    border-radius: 20px 20px 0 0;
+}
+.card img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid white;
+    box-shadow: 0px 3px 0px #2350f4;
+}
+h1,p{
+    text-align: center;
+    /* margin: 10px 0 0 0; */
+    font-weight: 500;
+}
+h1{
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+}
+p{
+    color: rgb(46, 46, 46);
+}
+.icons{
+    padding: 0.5rem 0rem;
+}
+.icons i{
+    font-size: 1.9rem;
+    margin: 0.8rem;
+}
+.facebook{
+    color: #2350f4;
+}
+.youtube{
+    color: red;
+}
+.insta{
+    color: rgb(253, 50, 84);
+}
+.btns button{
+    padding: 0.6rem 1.5rem;
+    margin: 0 0.2rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #2350f4;
+    color: white;
+    cursor: pointer;
+}
+.btns button:hover{
+    background-color: #3b64f9;
+}
+.stat{
+    padding: 1.9rem 0;
+}
+.stat span{
+    margin: 0 0.3rem;
+    color: rgb(46, 46, 46);
+    font-size: 0.9rem;
+}
+
+.sepa{
+    color: rgb(246, 246, 246);
+}
