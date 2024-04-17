@@ -30,3 +30,7 @@ Basic Git and Terminal Commands:
 21. Resetting the code after Commiting for 1 step: git reset HEAD~1
 22. Resetting the code after Commiting for multiple steps: git reset <commit HASH>
 23. Checking our all commits: git log
+
+Basic NPM Commands:
+24. Creating a npm project : npm init
+25. Creating a npm project by skipping all the questions: npm init -y

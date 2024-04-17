@@ -1,9 +1,13 @@
-let age = 1;
 
-if(age>=18 && age<=60) {
-    console.log("You Can Drive :)");
-}else if(age<18 || age>60) {
-    console.log("You Can't Drive");
-}else {
-    console.log("Invalid Age");
+let elements = [1,2,3,4,5,6,7,8,9,10];
+let isEven = (e) => {
+    if(e%2==0)return true;
+    return false;
 }
+console.log(elements.filter(isEven));
+
+//3. reduce() : returns a value after running a function on the entire array
+let add = (a,b)=>{
+    return a+b;
+}
+console.log(elements.reduce(add));
